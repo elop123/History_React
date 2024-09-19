@@ -1,0 +1,20 @@
+.logoStyle{
+   height: 30px;
+    width: 30px;
+}
+.readMoreLink {
+    display: inline-flex;
+    align-items: center;
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .readMoreLink:hover {
+    text-decoration: underline;
+  }
+  
+  .logoStyle {
+    width: 20px;
+    height: 20px;
+    margin-left: 5px;
+  }

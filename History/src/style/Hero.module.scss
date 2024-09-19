@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Limelight&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Limelight&family=Linden+Hill:ital@0;1&display=swap');
+
+.container{
+    max-width: 900px;
+    height: 400px;
+    background-color: #1F1F1F;
+    border: 21px solid #695E48; 
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    margin-top: -13rem;
+    
+    .textStyle {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    text-align: center;
+        
+        h1{
+        font-family:"Limelight", sans-serif;
+        font-weight: 400;
+        font-size: 96px;
+        color: #C7BD8D;
+        align-items: center;
+    
+        
+    }
+    p{
+        font-family:"Linden Hill", sans-serif;
+        font-weight: 400;
+        font-size: 32px;
+        color: #C7BD8D;
+        text-align: center;
+        width:500px;
+        align-items: center;
+        text-align: center;
+        
+    }
+}
+    .circleLeft{
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background-color: #C7BD8D;
+       
+        position: absolute;
+        top: 15px;
+        left: 15px;
+    }
+    .circleRight {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background-color: #C7BD8D;
+        position: absolute;
+        top: 15px;
+        right: 15px;
+    }
+    .circleLeft2{
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background-color: #C7BD8D;
+       
+        position: absolute;
+        bottom: 15px;
+        left: 15px;
+    }
+    .circleRight2 {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background-color: #C7BD8D;
+        position: absolute;
+        bottom: 15px;
+        right: 15px;
+    }
+    }

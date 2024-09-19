@@ -1,0 +1,25 @@
+.navStyle {
+    background-color: black;
+    color: #C7BD8D;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+   
+    ul{
+        list-style-type: none;
+        display: inline-flex;
+        gap:8rem;
+        
+        li{
+            text-decoration: none;
+            font-size: 28px;
+            position: relative;
+        }
+         li:hover{
+            text-decoration: underline;
+            cursor: pointer;
+        }
+    }
+}
