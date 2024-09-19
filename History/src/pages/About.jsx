@@ -15,7 +15,7 @@ function About (){
     <>
     <Header />
      <Hero title="ABOUT" text="What happened on this day -
-      a specific year to get only events for that year" />
+      a website where you can find different history events on a specific year, on a specific date" />
      <Navigation />
     <AboutContent />
     

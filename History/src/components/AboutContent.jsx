@@ -1,5 +1,8 @@
+import s from '../style/About.module.scss'
+
 function AboutContent(){
-    return(<>
+    return(
+    <section className={s.aboutSection}>
     <p>Welcome to What Happened on This Day, a website designed to give you a glimpse into history by 
         focusing on key moments that occurred on a specific date throughout time.</p>
 <p>Whether you’re a history enthusiast or just curious about what happened on any given day, 
@@ -17,7 +20,7 @@ function AboutContent(){
     your birthday or other special dates.
 </li>
 </ul>
-        </>)
+        </section>)
 }
 
 

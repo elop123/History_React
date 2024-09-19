@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { useQuery } from '@tanstack/react-query';
-
+import s from '../style/Events.module.scss'
 
 // Function to fetch events based on day and month
 const fetchEvents = async ({ queryKey }) => {
@@ -14,27 +14,29 @@ const fetchEvents = async ({ queryKey }) => {
 
 const Events = ({day, month}) => {
 
-  // Using react-query's useQuery to fetch events when the day and month are available
   const { data, error, isLoading} = useQuery({
     queryKey: ['events', day, month],
     queryFn: fetchEvents,
   })
 
   return (
-    <div>
-      <h1>What Happened on {day}/{month}</h1>
+    <section>
+      <h1 className={s.titleStyle}>What Happened on {day}/{month}</h1>
 
-
-      {/* Display loading, error or the fetched data */}
       {isLoading && <p>Loading...</p>}
+
       {error && <p>{error.message}</p>}
+
       {data && data.events && (
-        <div className="events-timeline">
+        <ul className={s.eventsStyle}>
           {data.events.length > 0 ? (
             data.events.map((event, index) => (
-              <div key={index} className="event-item">
-                <h3>Year: {event.year}</h3>
-                <p>{event.text}</p>
+              <li key={index} className={s.eventItemStyle}>
+                <section className={s.yearSectionStyle}>
+                <article className={s.yearStyle}>
+                <div className={s.circle}></div>
+                <h3 className={s.yearTitleStyle}>Year:{event.year}</h3>
+                <p className={s.textStyle}>{event.text}</p>
                 {event.pages && event.pages.length > 0 && (
                   <a
                     href={`https://en.wikipedia.org/wiki/${event.pages[0]}`}
@@ -42,15 +44,18 @@ const Events = ({day, month}) => {
                   >
                     Read more
                   </a>
+               
                 )}
-              </div>
+                </article>
+                </section>
+              </li>
             ))
           ) : (
             <p>No events found for this date.</p>
           )}
-        </div>
+        </ul>
       )}
-    </div>
+    </section>
   );
 };
 

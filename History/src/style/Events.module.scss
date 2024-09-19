@@ -1,0 +1,100 @@
+body{
+  background-color:#1F1F1F;
+}
+.titleStyle{
+  text-align: center;
+  font-family: 'Linden Hill';
+  font-size: 32px;
+  font-weight: 400;
+  color: #695E48;
+  
+}
+.eventsStyle {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+  position: relative;
+  color: white;
+  font-family: 'Linden Hill';
+  .eventItemStyle {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+ 
+  }
+  .yearSectionStyle{
+    display: flex;            
+    justify-content: center;   
+    align-items: center;      
+    flex-direction: column;    
+    margin: auto;
+    margin-left: 7rem;
+    position: relative;
+   
+  .yearStyle{
+        width: 200px;
+        height: 200px;
+        border: 4px solid #C7BD8D;
+        margin: auto;
+        //margin-top: 3rem;
+        margin-top: 1rem;
+        border-top: none;
+        border-right: none;
+       
+       
+        
+         .circle{
+          width: 32px;
+          height: 32px;
+          border-radius: 50%  ;
+          //background-color: #C7BD8D;
+          background-color: black;
+          border:4px solid #C7BD8D ;
+          margin-left: -1.1rem;
+          margin-top: -1.9rem;
+        }
+        
+        
+        
+  
+         .yearTitleStyle{
+           margin-bottom: -1rem;
+           margin-top: 10rem;
+       margin-left: 9rem;
+       font-family: 'Linden Hill';
+           font-weight: 400;
+           font-size: 24px;
+          
+         }
+        .textStyle{
+          width: 280px;
+          margin-top: 2rem;
+          margin-left: 12rem;
+          font-family: 'Linden Hill';
+        font-size: 18px;
+        font-weight: 400;
+      }
+      
+      }
+      .bookStyle{
+        width: 25px;
+        height: 25px;
+        float: right;
+        margin-top: -1px;
+        margin-right: 2rem;
+        
+       
+        
+      }
+      .readMoreLink {
+        margin-top: 2rem;
+        margin-left: 4rem;
+        color: white;
+      }
+       
+    }
+}

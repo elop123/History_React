@@ -3,6 +3,7 @@ import Events from "../components/Events"
 import Header from "../components/Header"
 import Hero from "../components/Hero"
 import Navigation from "../components/Navigation"
+import s from '../style/ByDateStyle.module.scss'
 
 
 
@@ -29,16 +30,16 @@ function ByDate (){
     <Header />
      <Hero title={
         <>
-        ON:{" "} 
-        <form onSubmit={handleSubmit}>
-        <input 
+        ON: 
+        <form onSubmit={handleSubmit} className={s.formContainer}>
+        <input className={s.inputStyle}
               type="text"
               value={date}
               onChange={(e) => setDate(e.target.value)}
               placeholder="22/08"
               required
               />
-            <button type="submit">Events</button>
+            <button type="submit">Find</button>
             </form>
         </>}
            text="What happened on this day - Here you can enter
