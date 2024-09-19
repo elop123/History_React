@@ -11,7 +11,7 @@ function Navigation (){
             </li>
             <li><Link to ="/" >TODAY</Link>
             </li>
-            <li><Link to ="/Since" >SINCE</Link>
+            <li><Link to ="/About" >ABOUT</Link>
             </li>
         </ul>
     </nav>)

@@ -12,14 +12,18 @@
         display: inline-flex;
         gap:8rem;
         
-        li{
+        li a {
+            font-size: 25px;
             text-decoration: none;
-            font-size: 28px;
-            position: relative;
+            font-family: 'Linden Hill', sans-serif;
+            font-weight: 400;
+            color: inherit; /*  Color remains the same as the parent */
         }
          li:hover{
             text-decoration: underline;
             cursor: pointer;
+            transform: scale(1.2);
+           
         }
     }
 }

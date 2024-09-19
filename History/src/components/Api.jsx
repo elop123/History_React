@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
-import s from '../style/Year_Content.module.scss'
-
-import st from '../style/Api.module.scss'
+import lamp from '../assets/images/Light.png'
+import s from '../style/Api.module.scss'
+import book from '../assets/images/Bookmark (1).png'
 
 
 
@@ -33,22 +33,28 @@ useEffect (()=>{
     },[]);
 
     return(
-        <ul>
+        <ul className={s.timeline}>
         
         {time.length > 0 ? (
           time.map((event, index)=>(
-          <li key={index}>
-                 <div className={s.yearSectionStyle}>
-           <section className={s.yearStyle}>
+          <li key={index} className={s.timelineItem}>
+             {/* <img  className={s.lampImage} src={lamp} alt="lamp-img" /> */}
+          <section className={s.yearSectionStyle}>
+           <article className={s.yearStyle}>
               <div className={s.circle}></div>
-              <h2 className={s.yearLineStyle}>{event.year}</h2>
-              <p className={s.eventLineStyle}>{event.text}</p>
-              <a href="#" className={s.readMoreLink}>Read more <img  className ={st.logoStyle}/></a>
-           
-           
-           </section>
-           
-            </div>
+              <h2 className={s.yearLineStyle}>YEAR:{event.year}</h2>
+              <p className={s.eventLineStyle}>{event.text}<br/><a href="#" className={s.readMoreLink}>
+                Read more</a> <img className={s.bookStyle} src={book} alt="book-icon" /></p>
+           </article>
+          </section>
+          
+            
+         
+         
+          
+         
+            
+         
           </li> 
         
           ))

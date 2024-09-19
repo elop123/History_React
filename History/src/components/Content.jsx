@@ -7,7 +7,7 @@ function Content() {
   return (
     <main className={s.mainStyle}>
     <Api />
-    <Year_Content />
+    
     </main>
   );
 }
