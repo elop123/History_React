@@ -14,6 +14,11 @@ function ByDate (){
   const [day, setDay] = useState(null); 
   const [month, setMonth] = useState(null); 
 
+  const [darkStyle, setDarkStyle] = useState(true);
+
+    const changeTheme = () => {
+        setDarkStyle(prev => !prev);
+    };
 
 
    // Handle form  extract day/month
@@ -50,7 +55,7 @@ function ByDate (){
      <Navigation />
     
       
-    <Events day={day} month={month} />
+    <Events day={day} month={month} darkStyle={darkStyle} changeTheme={changeTheme}/>
     </>)
 }
 

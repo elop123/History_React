@@ -4,9 +4,11 @@ body{
 .titleStyle{
   text-align: center;
   font-family: 'Linden Hill';
-  font-size: 32px;
+  font-size: 36px;
   font-weight: 400;
   color: #695E48;
+  margin-left: 2rem;
+  padding:  1rem;
   
 }
 .eventsStyle {
@@ -163,4 +165,78 @@ body{
         
       
     }
+    @media(max-width:700px){
+      .yearStyle{
+        width: 200px;
+        height: 200px;
+        border: 4px solid #C7BD8D;
+        margin: auto;
+        //margin-top: 3rem;
+        margin-top: 1rem;
+        border-top: none;
+        border-right: none;
+         .circle{
+          width: 32px;
+          height: 32px;
+          border-radius: 50%  ;
+          //background-color: #C7BD8D;
+          background-color: black;
+          border:4px solid #C7BD8D ;
+          margin-left: -1.1rem;
+          margin-top: -1.9rem;
+        }
+        
+        
+        
+  
+         .yearTitleStyle{
+           margin-bottom: -1rem;
+           margin-top: 10rem;
+       margin-right: 2rem;
+       font-family: 'Linden Hill';
+           font-weight: 400;
+           font-size: 16px;
+          
+          
+         }
+        .textStyle{
+          width: 280px;
+          margin-top: 2rem;
+          margin-left: 12rem;
+          font-family: 'Linden Hill';
+        font-size: 18px;
+        font-weight: 400;
+      }
+      
+      }
+      
+    }
+}
+.darkStyle{
+  background-color: black;
+  padding-top: 1rem;
+  color: white;
+  margin: auto;
+ 
+  }
+  .lampImage{
+      width: 60px;
+      height: 60px;
+      float: right;
+      margin: 3rem;
+      cursor: pointer;
+  }
+  
+
+.dark{
+  background-color: black;
+  color: white;
+ 
+
+}
+.light{
+  background-color:#F5F5F5;
+  .yearSectionStyle{
+    color: black;
+  }
 }

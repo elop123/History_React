@@ -28,4 +28,27 @@
            
         }
     }
-}
+
+   
+    @media (max-width: 700px) {
+            flex-direction: column;
+            padding: 1rem;
+            
+            ul {
+                flex-direction: column; 
+                gap: 2rem; 
+    
+                li {
+                    margin: 0 auto; 
+                }
+    
+                li a {
+                    font-size: 20px;
+                    text-align: center;
+                }
+            }
+        }
+    
+       
+    }
+    

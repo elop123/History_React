@@ -2,10 +2,11 @@ import s from '../style/About.module.scss'
 import light from '../assets/images/Light.png'
 import dark from '../assets/images/icons-dark.png'
 
-function AboutContent(){
+function AboutContent({darkStyle , changeTheme}){
     return(
     <section className={s.aboutSection}>
-   
+    <article className={darkStyle ? s.dark : s.light}>
+   <img  onClick={changeTheme} className={s.lampImage} src={darkStyle? light: dark} alt="lamp-img" /> 
     <p>Welcome to What Happened on This Day, a website designed to give you a glimpse into history by 
         focusing on key moments that occurred on a specific date throughout time.</p>
 <p>Whether you’re a history enthusiast or just curious about what happened on any given day, 
@@ -23,6 +24,7 @@ function AboutContent(){
     your birthday or other special dates.
 </li>
 </ul>
+</article>
         </section>)
 }
 

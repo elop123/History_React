@@ -3,15 +3,18 @@ import AboutContent from "../components/AboutContent"
 import Header from "../components/Header"
 import Hero from "../components/Hero"
 import Navigation from "../components/Navigation"
-import ScrollButton from '../components/ScrollButton'
 import { useState } from "react"
 
 
 
 
-function About ({ darkStyle, changeTheme }){
+function About (){
 
+    const [darkStyle, setDarkStyle] = useState(true);
 
+    const changeTheme = () => {
+        setDarkStyle(prev => !prev);
+    };
 
     return(
     <>
@@ -20,7 +23,7 @@ function About ({ darkStyle, changeTheme }){
       a website where you can find different history events on a specific year, on a specific date" />
      <Navigation />
     <AboutContent darkStyle={darkStyle} changeTheme={changeTheme}/>
-    <ScrollButton />
+   
     </>)
 }
 

@@ -2,6 +2,8 @@ import { useState } from 'react';
 import { useQuery } from '@tanstack/react-query';
 import s from '../style/Events.module.scss'
 import book from '../assets/images/Bookmark (1).png'
+import light from '../assets/images/Light.png'
+import dark from '../assets/images/icons-dark.png'
 
 // Function to fetch events based on day and month
 const fetchEvents = async ({ queryKey }) => {
@@ -13,7 +15,7 @@ const fetchEvents = async ({ queryKey }) => {
   return response.json();
 };
 
-const Events = ({day, month}) => {
+const Events = ({day, month, darkStyle, changeTheme}) => {
 
   const { data, error, isLoading} = useQuery({
     queryKey: ['events', day, month],
@@ -21,8 +23,9 @@ const Events = ({day, month}) => {
   })
 
   return (
-    <section>
+    <section className={darkStyle ? s.dark : s.light}>
     
+    <img  onClick={changeTheme} className={s.lampImage} src={darkStyle? light: dark} alt="lamp-img" /> 
       <h1 className={s.titleStyle}>What Happened on {day}/{month}</h1>
 
       {isLoading && <p>Loading...</p>}

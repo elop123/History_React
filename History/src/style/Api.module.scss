@@ -141,7 +141,49 @@
   }
      
   }
+
+  @media(max-width:600px){
+   
+    .yearStyle{
+      width: 100px;
+      height: 100px;
+      margin: auto;
+      //margin-top: 3rem;
+      margin-top: 1rem;
+      border-top: none;
+      border-right: none;
+       .circle{
+        width: 32px;
+        height: 32px;
+        border-radius: 50%  ;
+        //background-color: #C7BD8D;
+        background-color: black;
+        border:4px solid #C7BD8D ;
+        margin-left: -1.4rem;
+        margin-top: -1.5rem;
+      }
+       .yearLineStyle{
+         margin-bottom: -1rem;
+         margin-top: 9.5rem;
+        margin-left: 9rem;
+        font-family: 'Linden Hill';
+         font-weight: 400;
+         font-size: 24px;
+         text-align: left;
+       }
+      .eventLineStyle{
+        width: 280px;
+        margin-top: 2rem;
+        margin-left: 17rem;
+        font-family: 'Linden Hill';
+      font-size: 18px;
+      font-weight: 400;
     }
+    
+    }
+  
+  }}
+  
 
   
     

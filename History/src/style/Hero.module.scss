@@ -81,4 +81,31 @@
         bottom: 15px;
         right: 15px;
     }
+
+    @media(max-width:700px){
+        .container{
+            width: 200px;
+            height: 250px;
+            margin-top: -3rem;
+            position: relative;
+        }
+        .textStyle {
+           
+                h1{
+                
+                font-weight: 400;
+                font-size: 40px;
+                
+            
+                
+            }
+            p{
+               
+                font-size: 16px;
+                color: #C7BD8D;
+                width: 300px;
+               
+            }
+        }
+    }
     }
