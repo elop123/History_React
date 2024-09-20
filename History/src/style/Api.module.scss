@@ -142,89 +142,207 @@
      
   }
 
-  @media(max-width:600px){
-  .lampImage{
-    float: left;
-  }
-  .yearSectionStyle{
-    margin-left: 6rem;
-    .yearStyle{
-      //background-color: red;
-      width: 130px;
-      height: 130px;
-      //margin: auto;
-      //margin-top: -0.5rem;
-      margin-left: -4rem;
-      border-top: none;
-      border-right: none;
-       .circle{
-        width: 16px;
-        height: 16px;
-        border-radius: 50%  ;
-        //background-color: #C7BD8D;
-        background-color: black;
-        border:4px solid #C7BD8D ;
-        margin-left: -0.9rem;
-        margin-top: -1rem;
+  // @media(max-width:600px){
+  // .lampImage{
+  //   float: left;
+  // }
+  // .yearSectionStyle{
+  //   margin-left: 6rem;
+  //   .yearStyle{
+  //     //background-color: red;
+  //     width: 130px;
+  //     height: 130px;
+  //     //margin: auto;
+  //     //margin-top: -0.5rem;
+  //     margin-left: -4rem;
+  //     border-top: none;
+  //     border-right: none;
+  //      .circle{
+  //       width: 16px;
+  //       height: 16px;
+  //       border-radius: 50%  ;
+  //       //background-color: #C7BD8D;
+  //       background-color: black;
+  //       border:4px solid #C7BD8D ;
+  //       margin-left: -0.9rem;
+  //       margin-top: -1rem;
+  //     }
+  //      .yearLineStyle{
+  //        margin-bottom: -2rem;
+  //        margin-top: 5rem;
+  //       margin-left:8rem;
+  //       font-family: 'Linden Hill';
+  //        font-weight: 400;
+  //        font-size: 16px;
+  //        text-align: left;
+  //      }
+  //     .eventLineStyle{
+  //       width: 250px;
+  //       margin-top: 2rem;
+  //       margin-left: 8rem;
+  //       font-family: 'Linden Hill';
+  //     font-size: 14px;
+  //     font-weight: 400;
+  //   }
+    
+  //   }
+  // }
+  // .yearStyleLeft {
+  //   margin-left: -2.3rem; 
+  //   text-align: left;
+  //   border: 4px solid  #C7BD8D;
+  //   border-left: none;
+  //   border-top: none;
+  //   //margin-top: 1rem;
+  //   .circleLeft{
+  //     width: 16x;
+  //     height: 16px;
+  //     border-radius: 50%  ;
+  //     background-color: black;
+  //     border:4px solid #C7BD8D ;
+  //     margin-left: 11rem;
+  //     margin-top: -1.5rem;
+  //   }
+  //   .yearLineStyleLeft{
+  //     margin-bottom: -1rem;
+  //     margin-top: 9rem;
+  //    margin-left: -3rem;
+  //    font-family: 'Linden Hill';
+  //     font-weight: 400;
+  //     font-size: 24px;
+  //     text-align: left;
+  //     //background-color: red;
+  //    }
+  //    .eventLineStyleLeft{
+  //     width: 280px;
+  //     margin-top: 2rem;
+  //     margin-left: -20rem;
+  //     font-family: 'Linden Hill';
+  //   font-size: 18px;
+  //   font-weight: 400;
+  //   text-align: right;
+  //    }
+  // }
+  
+  // }
+  @media(max-width:700px){
+    .yearSectionStyle{
+      
+      .yearStyle{
+        width: 180px;
+        height: 180px;
+        border: 4px solid #C7BD8D;
+        margin-left: -13rem;
+        margin-top: 1rem;
+        border-top: none;
+        border-right: none;
+         .circle{
+          width: 20px;
+          height: 20px;
+          border-radius: 50%  ;
+          background-color: black;
+          border:4px solid #C7BD8D ;
+          margin-left: -1rem;
+          margin-top: -1.4rem;
+        }
+        .yearLineStyle{
+           margin-bottom: -1rem;
+           margin-top: 9.5rem;
+          margin-left: 7.5rem;
+          font-family: 'Linden Hill';
+           font-weight: 400;
+           font-size: 18px;
+           
+         }
+         .eventLineStyle{
+          width: 235px;
+          margin-top: 2rem;
+          margin-left: 7.5rem;
+          font-family: 'Linden Hill';
+        font-size: 16px;
+        font-weight: 400;
+       
       }
-       .yearLineStyle{
-         margin-bottom: -2rem;
-         margin-top: 5rem;
-        margin-left:8rem;
-        font-family: 'Linden Hill';
-         font-weight: 400;
-         font-size: 16px;
-         text-align: left;
-       }
-      .eventLineStyle{
-        width: 250px;
-        margin-top: 2rem;
-        margin-left: 8rem;
-        font-family: 'Linden Hill';
-      font-size: 14px;
-      font-weight: 400;
+      
+      }
+      .yearLineStyleLeft {
+        //margin-top: 3rem;
+        .circleLeft{
+          width: 16px;
+          height: 16px;
+          border-radius: 50%  ;
+          background-color: black;
+          border:4px solid #C7BD8D ;
+          margin-left: -0.8rem;
+          margin-top: -1.45rem;
+        }
+        .yearTitleStyleLeft{
+          margin-bottom: -1rem;
+          margin-top: 9.5rem;
+         margin-left: -5rem;
+         font-family: 'Linden Hill';
+          font-weight: 400;
+          font-size: 18px;
+          text-align: right;
+         }
+         .eventLineStyleLeft{
+          width: 235px;
+          margin-top: 2rem;
+          margin-left: -7.5rem;
+          font-family: 'Linden Hill';
+        font-size: 16px;
+        font-weight: 400;
+        text-align: right;
+        background-color: red;
+         }
+      }
+      .tagStyle{
+        cursor: pointer;
+        margin-left:-6rem;    
+        margin-top: -1.5rem;
+        margin-right: -2rem;
+        margin-top: -1.2rem;
+        .readMoreLink {
+         margin-right: -6.9rem;
+          color: white;
+          cursor: pointer;
+           }
+           .bookStyle{
+            width: 25px;
+            height: 25px;
+            cursor: pointer;
+            margin-top: -3px;
+            float: right;
+          }
+      }
+      .tagStyleLeft{
+        //float: left;
+        margin-left:9rem;    
+        margin-top: -1rem;
+        cursor:pointer;
+        .bookStyle{
+          width: 25px;
+          height: 25px;
+          //float: right;
+          margin-top: -3px;
+          margin-right: 6rem;
+          cursor: pointer;
+        }
+        .readMoreLink {
+          //float: left;
+          //margin-left: 1rem;
+             color: white;
+             cursor: pointer;
+             text-decoration: underline;
+           margin-left: -1.5rem;
+            }
+        
+      }
     }
     
-    }
+    
   }
-  .yearStyleLeft {
-    margin-left: -2.3rem; 
-    text-align: left;
-    border: 4px solid  #C7BD8D;
-    border-left: none;
-    border-top: none;
-    //margin-top: 1rem;
-    .circleLeft{
-      width: 16x;
-      height: 16px;
-      border-radius: 50%  ;
-      background-color: black;
-      border:4px solid #C7BD8D ;
-      margin-left: 11rem;
-      margin-top: -1.5rem;
-    }
-    .yearLineStyleLeft{
-      margin-bottom: -1rem;
-      margin-top: 9rem;
-     margin-left: -3rem;
-     font-family: 'Linden Hill';
-      font-weight: 400;
-      font-size: 24px;
-      text-align: left;
-      //background-color: red;
-     }
-     .eventLineStyleLeft{
-      width: 280px;
-      margin-top: 2rem;
-      margin-left: -20rem;
-      font-family: 'Linden Hill';
-    font-size: 18px;
-    font-weight: 400;
-    text-align: right;
-     }
-  }
-  
-  }}
+}
   
 
   
