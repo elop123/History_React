@@ -143,44 +143,86 @@
   }
 
   @media(max-width:600px){
-   
+  .lampImage{
+    float: left;
+  }
+  .yearSectionStyle{
+    margin-left: 6rem;
     .yearStyle{
-      width: 100px;
-      height: 100px;
-      margin: auto;
-      //margin-top: 3rem;
-      margin-top: 1rem;
+      //background-color: red;
+      width: 130px;
+      height: 130px;
+      //margin: auto;
+      //margin-top: -0.5rem;
+      margin-left: -4rem;
       border-top: none;
       border-right: none;
        .circle{
-        width: 32px;
-        height: 32px;
+        width: 16px;
+        height: 16px;
         border-radius: 50%  ;
         //background-color: #C7BD8D;
         background-color: black;
         border:4px solid #C7BD8D ;
-        margin-left: -1.4rem;
-        margin-top: -1.5rem;
+        margin-left: -0.9rem;
+        margin-top: -1rem;
       }
        .yearLineStyle{
-         margin-bottom: -1rem;
-         margin-top: 9.5rem;
-        margin-left: 9rem;
+         margin-bottom: -2rem;
+         margin-top: 5rem;
+        margin-left:8rem;
         font-family: 'Linden Hill';
          font-weight: 400;
-         font-size: 24px;
+         font-size: 16px;
          text-align: left;
        }
       .eventLineStyle{
-        width: 280px;
+        width: 250px;
         margin-top: 2rem;
-        margin-left: 17rem;
+        margin-left: 8rem;
         font-family: 'Linden Hill';
-      font-size: 18px;
+      font-size: 14px;
       font-weight: 400;
     }
     
     }
+  }
+  .yearStyleLeft {
+    margin-left: -2.3rem; 
+    text-align: left;
+    border: 4px solid  #C7BD8D;
+    border-left: none;
+    border-top: none;
+    //margin-top: 1rem;
+    .circleLeft{
+      width: 16x;
+      height: 16px;
+      border-radius: 50%  ;
+      background-color: black;
+      border:4px solid #C7BD8D ;
+      margin-left: 11rem;
+      margin-top: -1.5rem;
+    }
+    .yearLineStyleLeft{
+      margin-bottom: -1rem;
+      margin-top: 9rem;
+     margin-left: -3rem;
+     font-family: 'Linden Hill';
+      font-weight: 400;
+      font-size: 24px;
+      text-align: left;
+      //background-color: red;
+     }
+     .eventLineStyleLeft{
+      width: 280px;
+      margin-top: 2rem;
+      margin-left: -20rem;
+      font-family: 'Linden Hill';
+    font-size: 18px;
+    font-weight: 400;
+    text-align: right;
+     }
+  }
   
   }}
   

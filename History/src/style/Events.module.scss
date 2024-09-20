@@ -166,49 +166,121 @@ body{
       
     }
     @media(max-width:700px){
-      .yearStyle{
-        width: 200px;
-        height: 200px;
-        border: 4px solid #C7BD8D;
-        margin: auto;
-        //margin-top: 3rem;
-        margin-top: 1rem;
-        border-top: none;
-        border-right: none;
-         .circle{
-          width: 32px;
-          height: 32px;
-          border-radius: 50%  ;
-          //background-color: #C7BD8D;
-          background-color: black;
-          border:4px solid #C7BD8D ;
-          margin-left: -1.1rem;
-          margin-top: -1.9rem;
+      .yearSectionStyle{
+        .yearStyle{
+          width: 180px;
+          height: 180px;
+          border: 4px solid #C7BD8D;
+          margin-left: -1rem;
+          //margin-top: 3rem;
+          margin-top: 1rem;
+          border-top: none;
+          border-right: none;
+           .circle{
+            width: 20px;
+            height: 20px;
+            border-radius: 50%  ;
+            //background-color: #C7BD8D;
+            background-color: black;
+            border:4px solid #C7BD8D ;
+            margin-left: -1rem;
+            margin-top: -1.4rem;
+          }
+           .yearTitleStyle{
+             margin-bottom: -1rem;
+             margin-top: 9.5rem;
+            margin-right: 2rem;
+            font-family: 'Linden Hill';
+             font-weight: 400;
+             font-size: 18px;
+           }
+          .textStyle{
+            width: 240px;
+            margin-top: 2rem;
+            margin-left: 9rem;
+            font-family: 'Linden Hill';
+          font-size: 16px;
+          font-weight: 400;
         }
         
-        
-        
-  
-         .yearTitleStyle{
-           margin-bottom: -1rem;
-           margin-top: 10rem;
-       margin-right: 2rem;
-       font-family: 'Linden Hill';
-           font-weight: 400;
-           font-size: 16px;
+        }
+        .yearStyleLeft {
+          //margin-top: 3rem;
+          .circleLeft{
+            width: 16px;
+            height: 16px;
+            border-radius: 50%  ;
+            background-color: black;
+            border:4px solid #C7BD8D ;
+            margin-left: -0.8rem;
+            margin-top: -1.55rem;
+          }
+          .yearTitleStyleLeft{
+            margin-bottom: -1rem;
+            margin-top: 9.5rem;
+           margin-left: 9rem;
+           font-family: 'Linden Hill';
+            font-weight: 400;
+            font-size: 18px;
+            text-align: right;
+            //background-color: red;
+           }
+           .textStyleLeft{
+            width: 200px;
+            margin-top: 2rem;
+            margin-left: 9rem;
+            font-family: 'Linden Hill';
+          font-size: 16px;
+          font-weight: 400;
+          text-align: left;
+           }
+        }
+        .tagStyle{
+          //float: right;
+          margin-left:-11.9rem;    
+          margin-top: -1.5rem;
+          margin-right: -2rem;
+          margin-top: -1.2rem;
+          .readMoreLink {
+            //float: left;
+            //margin-left: 12rem;
+            color: white;
+            cursor: pointer;
+            
+             }
+             .bookStyle{
+              width: 25px;
+              height: 25px;
+              cursor: pointer;
+              margin-top: -3px;
+              float: right;
+              //margin-right: -1.8rem;
+            }
+        }
+        .tagStyleLeft{
+          float: right;
+          margin-left:10rem;    
+          margin-top: -1rem;
           
+          .bookStyle{
+            width: 25px;
+            height: 25px;
+            float: right;
+            margin-top: -3px;
+            //margin-right: 3rem;
+            cursor: pointer;
+          }
+          .readMoreLink {
+            //float: left;
+            //margin-left: 1rem;
+               color: white;
+               cursor: pointer;
+               text-decoration: underline;
+             }
           
-         }
-        .textStyle{
-          width: 280px;
-          margin-top: 2rem;
-          margin-left: 12rem;
-          font-family: 'Linden Hill';
-        font-size: 18px;
-        font-weight: 400;
+        }
       }
       
-      }
       
     }
 }
