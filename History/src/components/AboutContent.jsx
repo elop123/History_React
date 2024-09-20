@@ -1,8 +1,11 @@
 import s from '../style/About.module.scss'
+import light from '../assets/images/Light.png'
+import dark from '../assets/images/icons-dark.png'
 
 function AboutContent(){
     return(
     <section className={s.aboutSection}>
+   
     <p>Welcome to What Happened on This Day, a website designed to give you a glimpse into history by 
         focusing on key moments that occurred on a specific date throughout time.</p>
 <p>Whether you’re a history enthusiast or just curious about what happened on any given day, 

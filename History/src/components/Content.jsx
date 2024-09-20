@@ -1,13 +1,17 @@
 import s from '../style/Content.module.scss';
-import Year_Content from './Year_Content';
 import Api from './Api';
+import light from '../assets/images/Light.png'
+import dark from '../assets/images/icons-dark.png'
 
 
-function Content() {
+
+function Content({darkStyle , changeTheme}) {
+
+
   return (
-    <main className={s.mainStyle}>
+    <main className={darkStyle ? s.dark : s.light}>
+      <img  onClick={changeTheme} className={s.lampImage} src={darkStyle? light: dark} alt="lamp-img" /> 
     <Api />
-    
     </main>
   );
 }

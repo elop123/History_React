@@ -1,8 +1,30 @@
-.mainStyle{
-    background-color: black;
-    padding-top: 1rem;
-    color: white;
-    margin: auto;
-    text-align: center;
-    
-}
+main{
+    padding-top: 2rem;
+    .darkStyle{
+        background-color: black;
+        padding-top: 1rem;
+        color: white;
+        margin: auto;
+       
+        }
+        .lampImage{
+            width: 60px;
+            height: 60px;
+            float: right;
+            margin: 3rem;
+            cursor: pointer;
+        }
+        
+    }
+    .dark{
+        background-color: black;
+        color: white;
+       
+      
+    }
+    .light{
+        background-color:#F5F5F5;
+        color: black;
+        
+    }
+

@@ -3,11 +3,13 @@ import AboutContent from "../components/AboutContent"
 import Header from "../components/Header"
 import Hero from "../components/Hero"
 import Navigation from "../components/Navigation"
+import ScrollButton from '../components/ScrollButton'
+import { useState } from "react"
 
 
 
 
-function About (){
+function About ({ darkStyle, changeTheme }){
 
 
 
@@ -17,8 +19,8 @@ function About (){
      <Hero title="ABOUT" text="What happened on this day -
       a website where you can find different history events on a specific year, on a specific date" />
      <Navigation />
-    <AboutContent />
-    
+    <AboutContent darkStyle={darkStyle} changeTheme={changeTheme}/>
+    <ScrollButton />
     </>)
 }
 

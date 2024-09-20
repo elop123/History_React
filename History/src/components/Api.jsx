@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-import lamp from '../assets/images/Light.png'
 import s from '../style/Api.module.scss'
 import book from '../assets/images/Bookmark (1).png'
 
@@ -9,6 +8,7 @@ function Api (){
 
 
 const [time, setTime]= useState([]);
+
 
 // Get today's date 
 const getCurrentDate = () => {
@@ -37,31 +37,30 @@ useEffect (()=>{
         
         {time.length > 0 ? (
           time.map((event, index)=>(
-          <li key={index} className={s.timelineItem}>
-             {/* <img  className={s.lampImage} src={lamp} alt="lamp-img" /> */}
+          <li key={index} className={s.timelineItem} >
+             
           <section className={s.yearSectionStyle}>
-           <article className={s.yearStyle}>
-              <div className={s.circle}></div>
-              <h2 className={s.yearLineStyle}>YEAR:{event.year}</h2>
-              <p className={s.eventLineStyle}>{event.text}<br/><a href="#" className={s.readMoreLink}>
-                Read more</a> <img className={s.bookStyle} src={book} alt="book-icon" /></p>
+          <article className={`${s.yearStyle} ${index % 2 === 0 ? s.yearStyleRight : s.yearStyleLeft}`}>
+              <div className={`${s.circle} ${index % 2 === 0 ? s.circle : s.circleLeft}`}></div>
+              <h2 className={`${s.yearLineStyle} ${index % 2 === 0 ? s.yearLineStyle : s.yearLineStyleLeft}`}>YEAR:{event.year}</h2>
+              <p className={`${s.eventLineStyle} ${index % 2 === 0 ? s.eventLineStyle : s.eventLineStyleLeft}`}>{event.text}<br/></p> 
+              <footer className={`${s.tagStyle} ${index % 2 === 0 ? s.tagStyle : s.tagStyleLeft}`}>
+              {event.pages && event.pages.length > 0 && event.pages[0]?.content_urls?.desktop?.page && (
+              <a  className={s.readMoreLink} href={event.pages[0].content_urls.desktop.page} target="_blank" rel="noopener noreferrer">Read More 
+                <img src={book} className={s.bookStyle} alt="book-icon" /></a>)}
+              </footer>
+              
            </article>
           </section>
-          
-            
-         
-         
-          
-         
-            
-         
           </li> 
         
           ))
         ): (
           <p>Loading event...</p>
         )}
+        
         </ul>
+        
     )
 }
 

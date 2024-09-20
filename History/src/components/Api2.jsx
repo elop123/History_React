@@ -8,22 +8,6 @@ function Api2 ({selectYear}) {
     const url =  `https://api.wikimedia.org/feed/v1/wikipedia/en/onthisday/all/${selectYear}`;
    
 
-
-
-// useEffect(()=>{
-//     if(setYears){
-//         async function getYear() {
-//             const url = `https://api.wikimedia.org/feed/v1/wikipedia/en/all/${years}`;
-//             let res = await fetch(url);
-//             let data = await res.json();
-//             console.log(data);
-//             setYears(data.events); 
-//           }
-//           getYear();
-//     }
-// },[selectYear])
-
-//const url = `https://api.wikimedia.org/feed/v1/wikipedia/en/onthisday/all/${selectYear}`;
 const queryClient= useQueryClient()
 
 //Queries

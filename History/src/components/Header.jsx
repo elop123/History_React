@@ -3,13 +3,13 @@ import s from '../style/Header.module.scss'
 
 function Header (){
     return(
-    <>
-    <div className={s.cornerStyle}></div>
-    <div className={s.cornerStyle2}></div>
+    < header>
+    {/* <div className={s.cornerStyle}></div>
+    <div className={s.cornerStyle2}></div> */}
     
     <img className={s.imageStyle} src={img} alt="header-img" />
    
-    </>)
+    </header>)
 }
 
 export default Header

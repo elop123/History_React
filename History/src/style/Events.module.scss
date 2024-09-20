@@ -44,9 +44,6 @@ body{
         margin-top: 1rem;
         border-top: none;
         border-right: none;
-       
-       
-        
          .circle{
           width: 32px;
           height: 32px;
@@ -80,21 +77,90 @@ body{
       }
       
       }
-      .bookStyle{
-        width: 25px;
-        height: 25px;
+      .yearStyleRight {
+        margin: auto;
+        text-align:left;
+      }
+      .yearStyleLeft {
+        margin-left: 2.7rem; 
+        text-align: left;
+        border: 4px solid  #C7BD8D;
+        border-left: none;
+        border-top: none;
+        margin-top: 1px;
+        .circleLeft{
+          width: 32px;
+          height: 32px;
+          border-radius: 50%  ;
+          background-color: black;
+          border:4px solid #C7BD8D ;
+          margin-left: 11.4rem;
+          margin-top: -1.4rem;
+        }
+        .yearTitleStyleLeft{
+          margin-bottom: -1rem;
+          margin-top: 9rem;
+         margin-left: -3rem;
+         font-family: 'Linden Hill';
+          font-weight: 400;
+          font-size: 24px;
+          text-align: left;
+          //background-color: red;
+         }
+         .textStyleLeft{
+          width: 280px;
+          margin-top: 2rem;
+          margin-left: -20rem;
+          font-family: 'Linden Hill';
+        font-size: 18px;
+        font-weight: 400;
+        text-align: right;
+         }
+      }
+      .tagStyle{
         float: right;
-        margin-top: -1px;
-        margin-right: 2rem;
+        margin-right: -3.7rem;
+        margin-top: -1.2rem;
+        .readMoreLink {
+          float: left;
+          margin-left: 12rem;
+          color: white;
+          cursor: pointer;
+          text-decoration: underline;
+           }
+           .bookStyle{
+            width: 25px;
+            height: 25px;
+            cursor: pointer;
+            margin-top: -3px;
+            float: right;
+            margin-right: -1.8rem;
+          }
+      }
+      .tagStyleLeft{
+        float: left;
+        margin-left: -6.5rem;    
+        margin-top: -1rem;
         
-       
+        .bookStyle{
+          width: 25px;
+          height: 25px;
+          float: right;
+          margin-top: -3px;
+          //margin-right: 3rem;
+          cursor: pointer;
+        }
+        .readMoreLink {
+          //float: left;
+          margin-left: -2rem;
+             color: white;
+             cursor: pointer;
+             text-decoration: underline;
+           }
         
       }
-      .readMoreLink {
-        margin-top: 2rem;
-        margin-left: 4rem;
-        color: white;
-      }
-       
+        
+        
+      
     }
 }

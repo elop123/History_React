@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { useQuery } from '@tanstack/react-query';
 import s from '../style/Events.module.scss'
+import book from '../assets/images/Bookmark (1).png'
 
 // Function to fetch events based on day and month
 const fetchEvents = async ({ queryKey }) => {
@@ -21,6 +22,7 @@ const Events = ({day, month}) => {
 
   return (
     <section>
+    
       <h1 className={s.titleStyle}>What Happened on {day}/{month}</h1>
 
       {isLoading && <p>Loading...</p>}
@@ -33,18 +35,15 @@ const Events = ({day, month}) => {
             data.events.map((event, index) => (
               <li key={index} className={s.eventItemStyle}>
                 <section className={s.yearSectionStyle}>
-                <article className={s.yearStyle}>
-                <div className={s.circle}></div>
-                <h3 className={s.yearTitleStyle}>Year:{event.year}</h3>
-                <p className={s.textStyle}>{event.text}</p>
+                <article className={`${s.yearStyle} ${index % 2 === 0 ? s.yearStyleRight : s.yearStyleLeft}`}>
+                <div className={`${s.circle} ${index % 2 === 0 ? s.circle : s.circleLeft}`}></div>
+                <h3 className={`${s.yearTitleStyle} ${index % 2 === 0 ? s.yearTitleStyle : s.yearTitleStyleLeft}`}>Year:{event.year}</h3>
+                <p className={`${s.textStyle} ${index % 2 === 0 ? s.textStyle : s.textStyleLeft}`}>{event.text}</p>
                 {event.pages && event.pages.length > 0 && (
-                  <a
-                    href={`https://en.wikipedia.org/wiki/${event.pages[0]}`}
-                    target="_blank"
-                  >
-                    Read more
-                  </a>
-               
+                  <footer className={`${s.tagStyle} ${index % 2 === 0 ? s.tagStyle : s.tagStyleLeft}`}>
+                  <a className={s.readMoreLink} href={event.pages[0].content_urls.desktop.page} target="_blank" rel="noopener noreferrer"> Read more
+                  <img src={book} className={s.bookStyle} alt="book-icon" /></a>
+                  </footer>
                 )}
                 </article>
                 </section>

@@ -8,12 +8,15 @@ import s from '../style/ByDateStyle.module.scss'
 
 
 
-function ByDate (){
-    const [date, setDate] = useState('');  // The date in "dd/mm" format
-  const [day, setDay] = useState(null);  // The extracted day
-  const [month, setMonth] = useState(null); // The extracted month
 
-   // Handle form submission and extract day/month
+function ByDate (){
+  const [date, setDate] = useState('');  
+  const [day, setDay] = useState(null); 
+  const [month, setMonth] = useState(null); 
+
+
+
+   // Handle form  extract day/month
    const handleSubmit = (e) => {
     e.preventDefault();
     const [enteredDay, enteredMonth] = date.split('/');
@@ -45,6 +48,8 @@ function ByDate (){
            text="What happened on this day - Here you can enter
                  a specific date to get only events that happened on this date"/>
      <Navigation />
+    
+      
     <Events day={day} month={month} />
     </>)
 }

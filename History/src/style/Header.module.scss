@@ -1,9 +1,7 @@
 
 
-
-
-
-   
+header{
+    background-color: #1F1F1F;
     img{
         display: block;
         width: 100%;
@@ -11,21 +9,26 @@
         margin-top: -10rem;
     }
 
-.cornerStyle{
-    width: 300px;
-    height: 100px;
-    background-color: #695E48;
-    transform: rotate(-45deg);
-    margin-left: -10rem;
-    position: relative;
+// .cornerStyle{
+//     width: 300px;
+//     height: 100px;
+//     background-color: #695E48;
+//     transform: rotate(-45deg);
+//     margin-left: -10rem;
+//     position: relative;
+// }
+
+// .cornerStyle2 {
+//     width: 300px;
+//     height: 100px;
+//     background-color: #695e48;
+//     transform: rotate(45deg);  
+//     position: relative;  
+//     top: 0;  
+//     margin-left: -7.8rem;
+//   }
 }
 
-.cornerStyle2 {
-    width: 300px;
-    height: 100px;
-    background-color: #695e48;
-    transform: rotate(45deg);  
-    position: absolute;  
-    top: 0;  
-    right: -7.8rem;  
-  }
+
+   
+ 

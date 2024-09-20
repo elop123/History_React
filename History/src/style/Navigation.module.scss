@@ -6,11 +6,13 @@
     align-items: center;
     margin-top: 1rem;
     margin-bottom: 1rem;
+    padding: 1rem;
    
     ul{
         list-style-type: none;
         display: inline-flex;
-        gap:8rem;
+        gap:10rem;
+        margin:auto;
         
         li a {
             font-size: 25px;

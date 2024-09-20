@@ -21,5 +21,16 @@
     cursor: pointer; 
   }
   
+  .themeSwitcher {
+    display: flex;
+    justify-content: flex-end;
+    margin: 1rem;
+  }
+  
+  .lampImage {
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+  }
  
   
